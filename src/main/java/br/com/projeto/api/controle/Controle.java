@@ -22,6 +22,7 @@ public class Controle {
     @PostMapping("/")
     public Cliente cadastrar(@RequestBody Cliente c){
         return acao.save(c);
+        
     }
 
     @GetMapping("/")
