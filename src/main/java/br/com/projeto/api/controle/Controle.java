@@ -20,6 +20,7 @@ public class Controle {
     private Repositorio acao;
 
     @PostMapping("/")
+    
     public Cliente cadastrar(@RequestBody Cliente c){
         return acao.save(c);
         
